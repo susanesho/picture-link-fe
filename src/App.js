@@ -1,24 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import {Container, GlobalStyles} from './App.style'
+import {Upload} from './components/upload/upload'
+import { useState } from 'react';
+import {ImagePreview} from './components/ImagePreview/ImagePreview'
 
 function App() {
+  const [fileUrl, setFileUrl] = useState()
+  const handleUploadChange = (file) => {
+   const url =  URL.createObjectURL(file)
+
+    setFileUrl(url)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <GlobalStyles />
+      <Upload onChange={handleUploadChange} />
+
+      <ImagePreview  src={fileUrl} />
+    </Container>
   );
 }
 
