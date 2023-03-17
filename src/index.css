@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.red-bird{
+  width: 16.5rem;
+ height: 20.6rem;
+}
+.ranked-prototoypes{
+  flex: 25%;
+  /* max-width: 55%; */
+  padding: 0 0.25rem;
+}
