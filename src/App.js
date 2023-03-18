@@ -45,7 +45,7 @@ function App() {
           <RankedPrototypes />
         </div>
         <div>
-          {/* <h4>Red Cockaded Woodpecker</h4> */}
+          <h4>Red Cockaded Woodpecker</h4>
           <ScorePrediction />
         </div>
       </ImagePrototypesSection>
