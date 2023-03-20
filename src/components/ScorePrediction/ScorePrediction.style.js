@@ -6,7 +6,7 @@ export const Container = styled.div`
 
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 1rem;
 `
 export const Score = styled.div`
   font-size: 1.4rem;
@@ -32,4 +32,9 @@ export const Row = styled.div`
   gap: 1rem;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 100%;
+    min-height: 100%;
+  }
 `

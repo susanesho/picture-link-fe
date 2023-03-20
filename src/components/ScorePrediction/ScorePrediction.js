@@ -3,6 +3,7 @@ import { Container, Score, TotalScore, ImageWrapper, Row } from "./ScorePredicti
 export function ScorePrediction(){
  return (
    <Container>
+    <h4>Red Cockaded Woodpecker</h4>
     {/* todo add a foreach loop through cordinates for the backend and display */}
     {/* <ImageTitle> Red Cockaded Woodpecker</ImageTitle> */}
       <ImageWrapper>

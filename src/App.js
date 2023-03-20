@@ -10,7 +10,6 @@ import {
 } from './App.style'
 import {Upload} from './components/upload/upload'
 import { useState } from 'react';
-import {ImagePreview} from './components/ImagePreview/ImagePreview'
 import { RankedPrototypes } from './components/RankedPrototypes/RankedPrototypes';
 import { ScorePrediction } from './components/ScorePrediction/ScorePrediction';
 import { StatsOverview } from './components/StatsOverview/StatsOverview';
@@ -41,13 +40,8 @@ function App() {
       </ClassificationSection>
 
       <ImagePrototypesSection>
-        <div>
-          <RankedPrototypes />
-        </div>
-        <div>
-          <h4>Red Cockaded Woodpecker</h4>
-          <ScorePrediction />
-        </div>
+        <RankedPrototypes />
+        <ScorePrediction />
       </ImagePrototypesSection>
     </Container>
   );
